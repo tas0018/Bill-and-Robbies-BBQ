@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Sass Variables*/
+//Font
+
+//Colors
+$blue: #00BBF2;
+$red:  #B13B32;
+$pink: #E955A7;
+$charcol: #292D2F;
+$yellow: #FBEF02;
+$off-white: #FCFAF9;
+
+//Semantic Color Names
+$content-background-light: $blue;
+$content-background-dark: $charcol;
+$main-brand-color: $yellow;
+$light-accent: $pink;
+$dark-accent: $red;
+
+
+html{
+    font-size: 10px;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Hero Section Starts*/
+.hero {
+    background-image: url(/images/temp-background.jpg);
+    background-size: cover;
+    display: block;
+    position: relative;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+
+    /*
+    Parallax code below
+    fixed for parallax
+    scroll for normal scrolling
+    */
+    background-attachment: fixed;
+}
+
+/*Hero Section Ends*/
+
+/*Catering Section Starts*/
+.catering {
+    position: relative;
+}
+
+/*Catering Section Ends*/

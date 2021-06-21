@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Sass Variables*/
+html {
+  font-size: 10px;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*Hero Section Starts*/
+.hero {
+  background-image: url(/images/temp-background.jpg);
+  background-size: cover;
+  display: block;
+  position: relative;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  /*
+    Parallax code below
+    fixed for parallax
+    scroll for normal scrolling
+    */
+  background-attachment: fixed;
+}
+
+/*Hero Section Ends*/
+/*Catering Section Starts*/
+.catering {
+  position: relative;
+}
+
+/*Catering Section Ends*/
+/*# sourceMappingURL=styles.css.map */
