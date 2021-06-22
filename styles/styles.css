@@ -51,8 +51,93 @@ a {
 /*Hero Section Ends*/
 /*Catering Section Starts*/
 .catering {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catering-content {
+  width: 50%;
+  min-height: 100vh;
+  background-color: #F0EBED;
+}
+
+.catering-picture {
+  width: 50%;
+  min-height: 100vh;
+  background-image: url(/images/catering-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*Catering Section Ends*/
+/*Menu Section Starts*/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+}
+
+.menu-content {
+  width: 40%;
+  min-height: 80vh;
+  background-color: #121F34;
+}
+
+.menu-picture {
+  width: 60%;
+  min-height: 80vh;
+  background-image: url(/images/menu-temp-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Menu Section Ends*/
+/*Our Story Section Starts*/
+.our-story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 85vh;
+}
+
+.our-story-content {
+  width: 45%;
+  min-height: 85vh;
+  background-color: #F0EBED;
+}
+
+.our-story-picture {
+  width: 55%;
+  min-height: 85vh;
+  background-image: url(/images/our-story-temp-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Our Story Section Ends*/
+/*Our Family Section starts*/
+.our-family {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 90vh;
+}
+
+.our-family-picture {
+  width: 70%;
+  min-height: 90vh;
+  background-image: url(/images/temp-our-family-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-family-content {
+  width: 30%;
+  min-height: 90vh;
+  background-color: #121F34;
+}
+
+/*Our Family Section Ends*/
 /*# sourceMappingURL=styles.css.map */

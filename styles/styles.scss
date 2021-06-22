@@ -8,19 +8,20 @@
 //Font
 
 //Colors
-$blue: #00BBF2;
-$red:  #B13B32;
-$pink: #E955A7;
-$charcol: #292D2F;
-$yellow: #FBEF02;
-$off-white: #FCFAF9;
+$off-white: #F0EBED;
+$gunsmoke: #7F8484;
+$dark-grey: #69656A;
+$hurricane: #8B8182;
+$dark-blue: #121F34;
+
+
 
 //Semantic Color Names
-$content-background-light: $blue;
-$content-background-dark: $charcol;
-$main-brand-color: $yellow;
-$light-accent: $pink;
-$dark-accent: $red;
+$content-background-light: $off-white;
+$content-background-dark: $dark-blue;
+$main-brand-color: $dark-grey;
+$light-accent: $gunsmoke;
+$dark-accent: $hurricane;
 
 
 html{
@@ -64,7 +65,84 @@ a {
 
 /*Catering Section Starts*/
 .catering {
-    position: relative;
+    display: flex;
+}
+
+.catering-content {
+    width: 50%;
+    min-height: 100vh;
+    background-color: $off-white;
+}
+
+.catering-picture {
+    width: 50%;
+    min-height: 100vh;
+    background-image: url(/images/catering-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Catering Section Ends*/
+
+/*Menu Section Starts*/
+.menu {
+    display: flex;
+    min-height: 80vh;
+}
+
+.menu-content {
+    width: 40%;
+    min-height: 80vh;
+    background-color: $dark-blue;
+}
+
+.menu-picture {
+    width: 60%;
+    min-height: 80vh;
+    background-image: url(/images/menu-temp-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Menu Section Ends*/
+
+/*Our Story Section Starts*/
+.our-story {
+    display: flex;
+    min-height: 85vh;
+}
+
+.our-story-content {
+    width: 45%;
+    min-height: 85vh;
+    background-color: $off-white;
+}
+
+.our-story-picture {
+    width: 55%;
+    min-height: 85vh;
+    background-image: url(/images/our-story-temp-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Our Story Section Ends*/
+
+/*Our Family Section starts*/
+.our-family {
+    display: flex;
+    min-height: 90vh;
+}
+ 
+.our-family-picture {
+    width: 70%;
+    min-height: 90vh;
+    background-image: url(/images/temp-our-family-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-family-content {
+    width: 30%;
+    min-height: 90vh;
+    background-color: $dark-blue;
+}
+/*Our Family Section Ends*/
