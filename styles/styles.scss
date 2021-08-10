@@ -1,20 +1,20 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
 }
 
 /*Sass Variables*/
 //Font
 
 //Colors
-$off-white: #F0EBED;
-$gunsmoke: #7F8484;
-$dark-grey: #69656A;
-$hurricane: #8B8182;
-$dark-blue: #121F34;
-
-
+$off-white: #f0ebed;
+$gunsmoke: #7f8484;
+$dark-grey: #69656a;
+$hurricane: #8b8182;
+$dark-blue: #121f34;
+$white: #fff;
 
 //Semantic Color Names
 $content-background-light: $off-white;
@@ -23,126 +23,102 @@ $main-brand-color: $dark-grey;
 $light-accent: $gunsmoke;
 $dark-accent: $hurricane;
 
+//Sass mixins
+@mixin menuBox {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-html{
-    font-size: 10px;
+  h2 {
+    font-size: 6rem;
+  }
 }
 
-html, body{
-    overflow-x: hidden;
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Hero Section Starts*/
 .hero {
-    background-image: url(/images/temp-background.jpg);
-    background-size: cover;
-    display: block;
-    position: relative;
-    opacity: 0.8;
-    background-repeat: no-repeat;
+  background-image: url(/images/temp-background.jpg);
+  background-size: cover;
+  display: block;
+  position: relative;
+  opacity: 0.8;
+  background-repeat: no-repeat;
 
-    /*
+  /*
     Parallax code below
     fixed for parallax
     scroll for normal scrolling
     */
-    background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 /*Hero Section Ends*/
 
-/*Catering Section Starts*/
-.catering {
-    display: flex;
+/*Grid Menu section starts*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 70vh;
 }
 
-.catering-content {
-    width: 50%;
-    min-height: 100vh;
-    background-color: $off-white;
+.grid > div {
+  background: #ddd;
+  padding: 1em;
 }
 
-.catering-picture {
-    width: 50%;
-    min-height: 100vh;
-    background-image: url(/images/catering-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.grid .about-us {
+  @include menuBox();
+
+  background-image: url(/images/our-story-background.jpg);
+  backdrop-filter: grayscale(100%);
 }
 
-/*Catering Section Ends*/
+.grid .menus {
+  @include menuBox();
 
-/*Menu Section Starts*/
-.menu {
-    display: flex;
-    min-height: 80vh;
+  background-image: url(/images/full-menu-background.jpg);
 }
 
-.menu-content {
-    width: 40%;
-    min-height: 80vh;
-    background-color: $dark-blue;
+.grid .the-fam {
+  @include menuBox();
+
+  background-image: url(/images/temp-our-family-pic.jpg);
 }
 
-.menu-picture {
-    width: 60%;
-    min-height: 80vh;
-    background-image: url(/images/menu-temp-pic.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/*Menu Section Ends*/
+.grid .catering {
+  @include menuBox();
 
-/*Our Story Section Starts*/
-.our-story {
-    display: flex;
-    min-height: 85vh;
+  background-image: url(/images/catering-menu-background.jpg);
+  filter: grayscale(100%);
 }
+/*Grid Menu section ends*/
 
-.our-story-content {
-    width: 45%;
-    min-height: 85vh;
-    background-color: $off-white;
+/*Menu Page Starts*/
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
 }
-
-.our-story-picture {
-    width: 55%;
-    min-height: 85vh;
-    background-image: url(/images/our-story-temp-pic.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/*Our Story Section Ends*/
-
-/*Our Family Section starts*/
-.our-family {
-    display: flex;
-    min-height: 90vh;
-}
- 
-.our-family-picture {
-    width: 70%;
-    min-height: 90vh;
-    background-image: url(/images/temp-our-family-pic.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.our-family-content {
-    width: 30%;
-    min-height: 90vh;
-    background-color: $dark-blue;
-}
-/*Our Family Section Ends*/
+/*Menu Page Ends*/
