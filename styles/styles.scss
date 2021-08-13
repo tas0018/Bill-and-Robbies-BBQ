@@ -7,21 +7,15 @@
 
 /*Sass Variables*/
 //Font
+$MainFont: "Open Sans", sans-serif;
 
 //Colors
-$off-white: #f0ebed;
-$gunsmoke: #7f8484;
-$dark-grey: #69656a;
-$hurricane: #8b8182;
-$dark-blue: #121f34;
+$off-white: #e8eef1;
+$blue: #0000ff;
 $white: #fff;
-
-//Semantic Color Names
-$content-background-light: $off-white;
-$content-background-dark: $dark-blue;
-$main-brand-color: $dark-grey;
-$light-accent: $gunsmoke;
-$dark-accent: $hurricane;
+$dark-grey: #212121;
+$dark-blue: #050a30;
+$black: #000;
 
 //Sass mixins
 @mixin menuBox {
@@ -116,9 +110,97 @@ a {
 /*Grid Menu section ends*/
 
 /*Menu Page Starts*/
+//Button styles
+.btn {
+  position: relative;
+  display: block;
+  color: $white;
+  font-size: 1.7rem;
+  font-family: $MainFont;
+  text-decoration: none;
+  border: 2px solid $white;
+  width: fit-content;
+  padding: 1.5rem 3rem;
+  margin: auto 2rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+  z-index: 2;
+}
+
+.btn::before {
+  background: $blue;
+  content: "";
+  // width: 100%;
+  // height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.btn-intro::before,
+.btn-truck-menu::before,
+.btn-night-menu::before,
+.btn-full-menu::before {
+  width: 100%;
+  height: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btn:hover::before {
+  height: 300%;
+}
+
 .menu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
+  background-color: $black;
+}
+
+.menu-grid .menu-intro {
+  h2 {
+    margin-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 6rem;
+    padding-bottom: 5%;
+    color: $white;
+  }
+
+  p {
+    font-size: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: $white;
+  }
+
+  #intro-button {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+  }
+}
+
+.menu-grid .menu-picture {
+  background-image: url(/images/menu-temp-pic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-tabs .tab-header {
+  display: flex;
+  height: 15vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+}
+
+.tab-content-grid .menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 /*Menu Page Ends*/

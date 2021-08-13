@@ -147,12 +147,110 @@ a {
 
 /*Grid Menu section ends*/
 /*Menu Page Starts*/
+.btn {
+  position: relative;
+  display: block;
+  color: #fff;
+  font-size: 1.7rem;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  border: 2px solid #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.5rem 3rem;
+  margin: auto 2rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  z-index: 2;
+}
+
+.btn::before {
+  background: #0000ff;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.btn-intro::before,
+.btn-truck-menu::before,
+.btn-night-menu::before,
+.btn-full-menu::before {
+  width: 100%;
+  height: 0;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btn:hover::before {
+  height: 300%;
+}
+
 .menu-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   height: 100vh;
+  background-color: #000;
+}
+
+.menu-grid .menu-intro h2 {
+  margin-top: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 6rem;
+  padding-bottom: 5%;
+  color: #fff;
+}
+
+.menu-grid .menu-intro p {
+  font-size: 2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #fff;
+}
+
+.menu-grid .menu-intro #intro-button {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+.menu-grid .menu-picture {
+  background-image: url(/images/menu-temp-pic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-tabs .tab-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+
+.tab-content-grid .menu-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*Menu Page Ends*/

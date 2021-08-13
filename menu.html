@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B & R Menu</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/a950d241a5.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -23,14 +27,243 @@
             harum laboriosam iure quae, perspiciatis itaque impedit a officiis.
             Voluptatem, hic.
           </p>
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
             necessitatibus.
           </p>
-          <button class="btn btn-underline"></button>
+
+          <div id="intro-button">
+            <a href="#" class="btn btn-intro">Our Menus</a>
+          </div>
         </div>
-        <div class="menu-picture">Test</div>
+
+        <div class="menu-picture"></div>
       </div>
     </section>
-  </body>
+    
+    <section id="menu-content">
+        <div class="menu-tabs">
+          <div class="tab-header">
+
+            <div class="active">
+             <a href="#" class="btn btn-truck-menu">Food Truck</a>
+            </div>
+
+            <div>
+              <a href="#" class="btn btn-night-menu">Late Night</a>
+            </div>
+
+            <div>
+              <a href="#" class="btn btn-full-menu">Full Menu</a>
+            </div>
+
+          </div>
+          <div class="tab-content-grid">
+            <div class="menu-items active">
+              <div>
+                <h3>The Glazed Piggy</h3>
+                <p>
+                  $8 - Glazed Donut toasted and topped with Chief’s Pulled Pork,
+                  Cilantro Cole Slaw, Bacon and JL’s BBQ Sauce
+                </p>
+              </div>
+
+              <div>
+                <h3>Miss Piggy</h3>
+                <p>
+                  $8 - Glazed Donut toasted and topped with Chief’s Pulled Pork,
+                  Bacon Pimento Mac n Cheese and JL’s BBQ Sauce
+                </p>
+              </div>
+
+              <div>
+                <h3>Chief's Pulled Pork Sandwich</h3>
+                <p>
+                  $6 - 6oz. Pulled Pork Sandwich 
+                </p>
+                <p>
+                  $2 - Add Chips and a Drink
+                </p>
+              </div>
+
+              <div>
+                <h3>Scarface</h3>
+                <p>
+                  $15 - It’s a Cuban with Pulled Pork! Pulled Pork, Boar’s Head Ham
+                  JL’s Mustard Sauce, Pickles & Swiss Cheese on French Bread. Served with
+                  chips
+                </p>
+              </div>
+
+              <div>
+                <h3>“Patti” The Lunch Lady</h3>
+                <p>
+                  $12 - Grilled Cheese with Pulled Pork, Pimento Bacon Mac & Cheese,
+                  Caramelized Onions in JL’s Sweet Sauce, American Cheese & MORE Bacon.
+                  Served with chips
+                </p>
+              </div>
+
+              <div>
+                <h3>The Uncle Phil</h3>
+                <p>$13 - BBQ Philly Cheese. Pulled Pork, Grilled Bell Peppers, Caramelized Onions
+                  in JL’s Sweet Sauce, and Pimento Cheese served on a Hoagie. Served with
+                  chips</p>
+              </div>
+
+              <div>
+                <h3>Baby Back Ribs</h3>
+                <p>$14 - 1/2 Rack</p>
+                <p>$24 - Full Rack</p>
+                <p>$15 - Rib Plate</p>
+              </div>
+
+              <div>
+                <h3>Sides</h3>
+                <h4>Small $2.00, Large $3.50</h4>
+                <p>Cilantro Cole Slaw</p>
+                <p>Dirty Rice</p>
+                <p>Cowboy Caviar</p>
+                <p>Mango Pico</p>
+                <p>Pimento Bacon Mac n Cheese</p>
+                <p>Pimento Bacon Mac n Cheese w/pulled pork (Additional Cost)</p>
+              </div>
+            </div>
+
+            <div class="menu-items">
+              <div>
+                <h3>Redneck Nachos</h3>
+                <p>$12 - Tortilla Chips topped with Pulled Pork, Queso, Candied
+                  Jalapenos, Onions, Pinto Beans, and JL’s BBQ Sauce
+                </p>
+
+              </div>
+
+              <div>
+                <h3>Jerk Nachos</h3>
+                <p>$12 - Tortilla Chips topped with Jamaican Jerk Chicken, Dirty
+                  Rice, Queso, and Mango Pico
+                </p>
+              </div>
+
+              <div>
+                <h3>Pig Pen Nachos</h3>
+                <p>$12 - Tortilla Chips topped with Pulled Pork, Bacon Pimento
+                  Mac n’ Cheese, and JL’s BBQ Sauce
+                </p>
+              </div>
+
+              <div>
+                <h3>Moe’s Chicken Casserole with Tortilla Chips</h3>
+                <p>$8</p>
+              </div>
+            </div>
+
+            <div class="menu-items">
+              <div>
+                <h2>Starters</h2>
+
+                <h3>Redneck Nachos</h3>
+                <p>$12 - Tortilla Chips topped with Pulled Pork, Queso, Candied
+                Jalapenos, Onions, Pinto Beans, and JL’s BBQ Sauce
+                </p>
+
+                <h3>Jerk Nachos</h3>
+                <p>$12 - Tortilla Chips topped with Jamaican Jerk Chicken, Dirty
+                  Rice, Queso, and Mango Pico
+                </p>
+
+                <h3>Pig Pen Nachos</h3>
+                <p>$12 - Tortilla Chips topped with Pulled Pork, Bacon Pimento
+                  Mac n’ Cheese, and JL’s BBQ Sauce
+                </p>
+
+                <h3>Moe’s Chicken Casserole with Tortilla Chips</h3>
+                <p>$8</p>
+              </div>
+
+              <div>
+                <h2>Dinner Menu</h2>
+                <h3>Kings Stuffed Pork Sliders</h3>
+                <p>$15 - 2 Kings Stuffed Pulled Pork Sliders w/ Cilantro Cole Slaw
+                  and Candied Jalapenos on a Hawaiian Roll Served with Cowboy Caviar
+                  & Bacon Pimento Mac n Cheese
+                </p>
+  
+                <h3>Moe's Heavenly Smoked Chicken Casserole</h3>
+                <p>$15 - Moe's Heavenly Smoked Chicken Casserole served with Corn Spoon
+                  Bread and Cowboy Caviar
+                </p>
+  
+                <h3>Chief's Pulled Pork Tacos</h3>
+                <p>$13 - 3 Tacos with Chief's Pulled Pork, Cilantro Cole Slaw, and
+                  JL's BBQ Sauce. Served with Chips and Cilantro Cole Slaw
+                </p>
+  
+                <h3>Chief's Pulled Pork Sandwich</h3>
+                <p>$6 - 6oz. Pulled Pork Sandwich</p>
+                <p>$2 - Add Chips and a Drink</p>
+  
+                <h3>Jamaican Jerk Chicken Tacos</h3>
+                <p>$13 - 3 Tacos with Jerk Chicken and Mango Pico Served
+                  with Dirty Rice and Cilantro Cole Slaw
+                </p>
+  
+                <h3>Baby Back Ribs</h3>
+                <p>$14 - 1/2 Rack</p>
+                <p>$24 - Full Rack</p>
+                <p>$15 - Rib Plate</p>
+              </div>
+
+              <div>
+                <h2>Specialty Items</h2>
+                <h3>Miss Piggy</h3>
+                <p>
+                  $8 - Glazed Donut toasted and topped with Chief’s Pulled Pork,
+                  Bacon Pimento Mac n Cheese and JL’s BBQ Sauce
+                </p>
+
+                <h3>Miss Piggy</h3>
+                <p>
+                  $8 - Glazed Donut toasted and topped with Chief’s Pulled Pork,
+                  Bacon Pimento Mac n Cheese and JL’s BBQ Sauce
+                </p>
+
+                <h3>Scarface</h3>
+                <p>
+                  $15 - It’s a Cuban with Pulled Pork! Pulled Pork, Boar’s Head Ham
+                  JL’s Mustard Sauce, Pickles & Swiss Cheese on French Bread. Served with
+                  chips
+                </p>
+
+                <h3>“Patti” The Lunch Lady</h3>
+                <p>
+                  $12 - Grilled Cheese with Pulled Pork, Pimento Bacon Mac & Cheese,
+                  Caramelized Onions in JL’s Sweet Sauce, American Cheese & MORE Bacon.
+                  Served with chips
+                </p>
+
+                <h3>The Uncle Phil</h3>
+                <p>$13 - BBQ Philly Cheese. Pulled Pork, Grilled Bell Peppers, Caramelized Onions
+                  in JL’s Sweet Sauce, and Pimento Cheese served on a Hoagie. Served with
+                  chips</p>
+              </div>
+
+              <div>
+                <h2>Sides</h2>
+                <h3>Small $2.00, Large $3.50, Quart $11.50</h4>
+                <p>Cilantro Cole Slaw</p>
+                <p>Dirty Rice</p>
+                <p>Cowboy Caviar</p>
+                <p>Mango Pico</p>
+                <p>Pimento Bacon Mac n Cheese</p>
+                <p>Pimento Bacon Mac n Cheese w/pulled pork (Additional Cost)</p>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+    </section>
 </html>
