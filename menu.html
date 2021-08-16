@@ -33,8 +33,22 @@
             necessitatibus.
           </p>
 
-          <div id="intro-button">
-            <a href="#" class="btn btn-intro">Our Menus</a>
+          <div id="intro-buttons">
+            <div class="tab-header">
+
+              <div class="active">
+               <a href="#" class="btn btn-truck-menu" data-tab-target="#food-truck-menu">Food Truck</a>
+              </div>
+  
+              <div>
+                <a href="#" class="btn btn-night-menu" data-tab-target="#late-night-menu">Late Night</a>
+              </div>
+  
+              <div>
+                <a href="#" class="btn btn-full-menu" data-tab-target="#full-menu">Full Menu</a>
+              </div>
+  
+            </div>
           </div>
         </div>
 
@@ -44,23 +58,22 @@
     
     <section id="menu-content">
         <div class="menu-tabs">
-          <div class="tab-header">
-
-            <div class="active">
-             <a href="#" class="btn btn-truck-menu">Food Truck</a>
-            </div>
-
-            <div>
-              <a href="#" class="btn btn-night-menu">Late Night</a>
-            </div>
-
-            <div>
-              <a href="#" class="btn btn-full-menu">Full Menu</a>
-            </div>
-
-          </div>
           <div class="tab-content-grid">
-            <div class="menu-items active">
+            <div id="food-truck-menu" class="menu-items active">
+              <div>
+                <h3>Redneck Nachos</h3>
+                <p>$12 - Tortilla Chips topped with Pulled Pork, Queso, Candied
+                  Jalapenos, Onions, Pinto Beans, and JL’s BBQ Sauce
+                </p>
+              </div>
+
+              <div>
+                <h3>Pig Pen Nachos</h3>
+                <p>$12 - Tortilla Chips topped with Pulled Pork, Bacon Pimento
+                  Mac n’ Cheese, and JL’s BBQ Sauce
+                </p>
+              </div>
+              
               <div>
                 <h3>The Glazed Piggy</h3>
                 <p>
@@ -131,13 +144,12 @@
               </div>
             </div>
 
-            <div class="menu-items">
+            <div id="late-night-menu" class="menu-items">
               <div>
                 <h3>Redneck Nachos</h3>
                 <p>$12 - Tortilla Chips topped with Pulled Pork, Queso, Candied
                   Jalapenos, Onions, Pinto Beans, and JL’s BBQ Sauce
                 </p>
-
               </div>
 
               <div>
@@ -160,7 +172,7 @@
               </div>
             </div>
 
-            <div class="menu-items">
+            <div id="full-menu" class="menu-items">
               <div>
                 <h2>Starters</h2>
 

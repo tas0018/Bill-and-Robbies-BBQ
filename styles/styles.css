@@ -231,7 +231,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.menu-tabs .tab-header {
+#intro-buttons .tab-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,13 +244,18 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #000;
+  padding-top: 10%;
 }
 
 .tab-content-grid .menu-items {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  display: none;
+}
+
+.tab-content-grid .menu-items.active {
+  display: -ms-grid;
+  display: grid;
 }
 
 /*Menu Page Ends*/

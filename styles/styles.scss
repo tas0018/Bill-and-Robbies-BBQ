@@ -190,17 +190,23 @@ a {
   background-repeat: no-repeat;
 }
 
-.menu-tabs .tab-header {
+#intro-buttons .tab-header {
   display: flex;
   height: 15vh;
   width: 100%;
   justify-content: center;
   align-items: center;
   background-color: $black;
+  padding-top: 10%;
 }
 
 .tab-content-grid .menu-items {
-  display: grid;
+  //display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  display: none;
+}
+
+.tab-content-grid .menu-items.active {
+  display: grid;
 }
 /*Menu Page Ends*/
