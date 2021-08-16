@@ -200,10 +200,39 @@ a {
   padding-top: 10%;
 }
 
+#menu-content {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .tab-content-grid .menu-items {
   //display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   display: none;
+  text-align: center;
+  grid-gap: 3rem;
+}
+
+.tab-content-grid .menu-items > div {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
 }
 
 .tab-content-grid .menu-items.active {
