@@ -210,6 +210,7 @@ a {
   font-size: 6rem;
   padding-bottom: 5%;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .menu-grid .menu-intro p {
@@ -250,6 +251,9 @@ a {
 #menu-content {
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 2%;
+  background-color: #000;
+  color: #fff;
 }
 
 .tab-content-grid .menu-items {
@@ -258,6 +262,25 @@ a {
   display: none;
   text-align: center;
   grid-gap: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.tab-content-grid .menu-items .price-info {
+  font-size: 1.5 rem;
+  font-weight: 1000;
+}
+
+.tab-content-grid #full-menu h2 {
+  font-size: 6rem;
+}
+
+.tab-content-grid #full-menu h3 {
+  padding-top: 5%;
+}
+
+.tab-content-grid #full-menu .spacing {
+  padding-top: 20%;
 }
 
 .tab-content-grid .menu-items > div {
@@ -271,7 +294,8 @@ a {
 }
 
 .tab-content-grid .menu-items > div h3 {
-  font-size: 4rem;
+  font-size: 3.8rem;
+  padding-bottom: 1rem;
 }
 
 .tab-content-grid .menu-items > div h4 {
@@ -279,7 +303,8 @@ a {
 }
 
 .tab-content-grid .menu-items > div p {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  line-height: 150%;
 }
 
 .tab-content-grid .menu-items.active {
@@ -287,5 +312,97 @@ a {
   display: grid;
 }
 
-/*Menu Page Ends*/
+/*Menu Page content ends*/
+/*Footer starts*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: inherit;
+}
+
+footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1rem;
+}
+
+footer ul li .fa-facebook {
+  display: block;
+  color: #fff;
+  font-size: 3rem;
+}
+
+footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  padding-right: 5%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .links li {
+  color: #0000ff;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2rem;
+}
+
+footer .links li .footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 25px;
+  border: 1px solid #0000ff;
+  height: 3.3rem;
+  width: 3.3rem;
+}
+
+footer .links li .footer-icons i {
+  position: relative;
+  font-size: 1.8rem;
+  top: 22%;
+  left: 30%;
+}
+
+footer .links li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  color: #878787;
+  margin-left: 0.5rem;
+}
 /*# sourceMappingURL=styles.css.map */

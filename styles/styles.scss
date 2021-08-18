@@ -16,6 +16,8 @@ $white: #fff;
 $dark-grey: #212121;
 $dark-blue: #050a30;
 $black: #000;
+$gun-smoke: #878787;
+$dark-charcoal: #333333;
 
 //Sass mixins
 @mixin menuBox {
@@ -168,6 +170,7 @@ a {
     font-size: 6rem;
     padding-bottom: 5%;
     color: $white;
+    text-transform: uppercase;
   }
 
   p {
@@ -203,6 +206,9 @@ a {
 #menu-content {
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 2%;
+  background-color: $black;
+  color: $white;
 }
 
 .tab-content-grid .menu-items {
@@ -211,6 +217,27 @@ a {
   display: none;
   text-align: center;
   grid-gap: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .price-info {
+    font-size: 1.5 rem;
+    font-weight: 1000;
+  }
+}
+
+.tab-content-grid #full-menu {
+  h2 {
+    font-size: 6rem;
+  }
+
+  h3 {
+    padding-top: 5%;
+  }
+
+  .spacing {
+    padding-top: 20%;
+  }
 }
 
 .tab-content-grid .menu-items > div {
@@ -223,7 +250,8 @@ a {
   }
 
   h3 {
-    font-size: 4rem;
+    font-size: 3.8rem;
+    padding-bottom: 1rem;
   }
 
   h4 {
@@ -231,11 +259,79 @@ a {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 150%;
   }
 }
 
 .tab-content-grid .menu-items.active {
   display: grid;
 }
-/*Menu Page Ends*/
+/*Menu Page content ends*/
+
+/*Footer starts*/
+footer {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: $black;
+
+  .footer-content {
+    display: flex;
+    width: inherit;
+  }
+
+  .socials {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+
+  ul li .fa-facebook {
+    display: block;
+    color: $white;
+    font-size: 3rem;
+  }
+
+  .links {
+    display: flex;
+    margin-left: auto;
+    padding-right: 5%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links li {
+    color: $blue;
+    list-style: none;
+    display: flex;
+    margin-left: 2rem;
+
+    .footer-icons {
+      display: flex;
+      border-radius: 25px;
+      border: 1px solid $blue;
+      height: 3.3rem;
+      width: 3.3rem;
+
+      i {
+        position: relative;
+        font-size: 1.8rem;
+        top: 22%;
+        left: 30%;
+      }
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: $gun-smoke;
+      margin-left: 0.5rem;
+    }
+  }
+}
