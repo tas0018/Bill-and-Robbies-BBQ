@@ -159,7 +159,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   padding: 1.5rem 3rem;
-  margin: auto 2rem;
+  margin: auto;
   text-transform: uppercase;
   overflow: hidden;
   -webkit-transition: 1s all ease;
@@ -195,12 +195,16 @@ a {
 }
 
 .menu-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 100vh;
+  width: 100%;
   background-color: #000;
+}
+
+.menu-grid .menu-intro {
+  width: 50%;
 }
 
 .menu-grid .menu-intro h2 {
@@ -227,9 +231,12 @@ a {
 }
 
 .menu-grid .menu-picture {
-  background-image: url(/images/menu-temp-pic.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 50%;
+}
+
+.menu-grid .menu-picture img {
+  width: 100%;
+  height: 100%;
 }
 
 #intro-buttons .tab-header {
@@ -237,7 +244,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   height: 15vh;
-  width: 100%;
+  max-width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -245,7 +252,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #000;
-  padding-top: 10%;
+  margin-top: 10%;
+}
+
+#intro-buttons .tab-header div {
+  padding: 0 1rem;
 }
 
 #menu-content {
@@ -318,6 +329,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: auto;
   height: 50px;
   width: 100%;
   background-color: #000;
@@ -346,7 +358,7 @@ footer .socials {
 
 footer ul li .fa-facebook {
   display: block;
-  color: #fff;
+  color: blue;
   font-size: 3rem;
 }
 
@@ -405,4 +417,6 @@ footer .links li a {
   color: #878787;
   margin-left: 0.5rem;
 }
+
+/*Media Queries*/
 /*# sourceMappingURL=styles.css.map */
