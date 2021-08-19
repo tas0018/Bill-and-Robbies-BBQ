@@ -441,5 +441,9 @@ footer .links li a {
     width: 100%;
     height: 60vh;
   }
+  .tab-content-grid .menu-items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
