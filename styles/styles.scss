@@ -11,11 +11,11 @@ $MainFont: "Open Sans", sans-serif;
 
 //Colors
 $off-white: #e8eef1;
-$blue: #0000ff;
+$blue: #03b1fa;
 $white: #fff;
 $dark-grey: #212121;
 $dark-blue: #050a30;
-$black: #000;
+$black: #121212;
 $gun-smoke: #878787;
 $dark-charcoal: #333333;
 
@@ -175,7 +175,7 @@ a {
     margin-top: 20%;
     padding-left: 10%;
     padding-right: 10%;
-    font-size: 6rem;
+    font-size: 8rem;
     padding-bottom: 5%;
     color: $white;
     text-transform: uppercase;
@@ -309,7 +309,7 @@ footer {
 
   ul li .fa-facebook {
     display: block;
-    color: blue;
+    color: $blue;
     font-size: 3rem;
   }
 
