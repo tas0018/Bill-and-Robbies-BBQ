@@ -147,6 +147,10 @@ a {
 
 /*Grid Menu section ends*/
 /*Menu Page Starts*/
+#menu-body {
+  background-color: #000;
+}
+
 .btn {
   position: relative;
   display: block;
@@ -205,6 +209,7 @@ a {
 
 .menu-grid .menu-intro {
   width: 50%;
+  background-color: #000;
 }
 
 .menu-grid .menu-intro h2 {
@@ -275,6 +280,7 @@ a {
   grid-gap: 3rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background-color: #000;
 }
 
 .tab-content-grid .menu-items .price-info {
@@ -419,4 +425,21 @@ footer .links li a {
 }
 
 /*Media Queries*/
+@media screen and (max-width: 600px) {
+  .menu-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    max-height: 200vh;
+  }
+  .menu-grid .menu-intro {
+    width: 100%;
+    height: 80vh;
+  }
+  .menu-grid .menu-picture {
+    width: 100%;
+    height: 60vh;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
