@@ -185,13 +185,12 @@ a {
     font-size: 2rem;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 5%;
     color: $white;
   }
 
   #intro-button {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10%;
+    padding: 10%;
   }
 }
 
@@ -305,12 +304,16 @@ footer {
     align-items: center;
     justify-content: center;
     margin-left: 1rem;
-  }
 
-  ul li .fa-facebook {
-    display: block;
-    color: $blue;
-    font-size: 3rem;
+    li div a {
+      width: 100%;
+      height: 100%;
+
+      i {
+        font-size: 3rem;
+        color: $blue;
+      }
+    }
   }
 
   .links {
@@ -343,7 +346,33 @@ footer {
       }
     }
 
-    a {
+    .mobile-footer-icon {
+      display: flex;
+      display: none;
+      border-radius: 25px;
+      border: 1px solid $blue;
+      height: 3.3rem;
+      width: 3.3rem;
+
+      a {
+        width: 100%;
+        height: 100%;
+
+        i {
+          font-size: 2.1rem;
+          top: 22%;
+          left: 25%;
+          position: relative;
+          color: #03b1fa;
+        }
+
+        .fa-mobile-alt {
+          left: 28%;
+        }
+      }
+    }
+
+    .desktop-footer-link {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -364,7 +393,8 @@ footer {
 
     .menu-intro {
       width: 100%;
-      height: 80vh;
+      height: 90vh;
+      padding-bottom: 10%;
     }
 
     .menu-picture {
@@ -375,5 +405,29 @@ footer {
 
   .tab-content-grid .menu-items {
     grid-template-columns: 1fr;
+  }
+
+  #menu-content {
+    margin-top: 15%;
+  }
+
+  .btn {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .footer-icons {
+    display: none !important;
+
+    i {
+      display: none !important;
+    }
+  }
+
+  .desktop-footer-link {
+    display: none !important;
+  }
+
+  .mobile-footer-icon {
+    display: flex !important;
   }
 }
