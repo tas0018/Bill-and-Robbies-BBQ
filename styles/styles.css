@@ -159,6 +159,7 @@ a {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   border: 2px solid #fff;
+  border-radius: 5px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
