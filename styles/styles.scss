@@ -21,15 +21,26 @@ $dark-charcoal: #333333;
 
 //Sass mixins
 @mixin menuBox {
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   h2 {
     font-size: 6rem;
   }
+}
+
+@mixin menuBoxBackground {
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
 }
 
 html {
@@ -87,26 +98,34 @@ a {
 .grid .about-us {
   @include menuBox();
 
+  // background-image: url(/images/our-story-background.jpg);
+}
+
+.grid .about-us::before {
+  @include menuBoxBackground();
   background-image: url(/images/our-story-background.jpg);
-  backdrop-filter: grayscale(100%);
+}
+
+.grid .about-us .about-us-content {
+  position: relative;
 }
 
 .grid .menus {
   @include menuBox();
 
-  background-image: url(/images/full-menu-background.jpg);
+  // background-image: url(/images/full-menu-background.jpg);
 }
 
 .grid .the-fam {
   @include menuBox();
 
-  background-image: url(/images/temp-our-family-pic.jpg);
+  // background-image: url(/images/temp-our-family-pic.jpg);
 }
 
 .grid .catering {
   @include menuBox();
 
-  background-image: url(/images/catering-menu-background.jpg);
+  // background-image: url(/images/catering-menu-background.jpg);
   filter: grayscale(100%);
 }
 /*Grid Menu section ends*/

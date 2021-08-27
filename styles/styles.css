@@ -66,8 +66,6 @@ a {
 }
 
 .grid .about-us {
-  background-size: cover;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,18 +75,32 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/images/our-story-background.jpg);
-  -webkit-backdrop-filter: grayscale(100%);
-          backdrop-filter: grayscale(100%);
+  position: relative;
 }
 
 .grid .about-us h2 {
   font-size: 6rem;
 }
 
-.grid .menus {
+.grid .about-us::before {
   background-size: cover;
   background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  background-image: url(/images/our-story-background.jpg);
+}
+
+.grid .about-us .about-us-content {
+  position: relative;
+}
+
+.grid .menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,7 +110,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/images/full-menu-background.jpg);
+  position: relative;
 }
 
 .grid .menus h2 {
@@ -106,8 +118,6 @@ a {
 }
 
 .grid .the-fam {
-  background-size: cover;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +127,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/images/temp-our-family-pic.jpg);
+  position: relative;
 }
 
 .grid .the-fam h2 {
@@ -125,8 +135,6 @@ a {
 }
 
 .grid .catering {
-  background-size: cover;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +144,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/images/catering-menu-background.jpg);
+  position: relative;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
