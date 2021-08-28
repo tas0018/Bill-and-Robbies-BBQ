@@ -104,6 +104,7 @@ a {
 .grid .about-us::before {
   @include menuBoxBackground();
   background-image: url(/images/our-story-background.jpg);
+  
 }
 
 .grid .about-us .about-us-content {
@@ -116,17 +117,44 @@ a {
   // background-image: url(/images/full-menu-background.jpg);
 }
 
+.grid .menus::before {
+  @include menuBoxBackground();
+  background-image: url(/images/full-menu-background.jpg);
+
+}
+ 
+.grid .menus .menus-content {
+  position: relative;
+}
+
 .grid .the-fam {
   @include menuBox();
 
   // background-image: url(/images/temp-our-family-pic.jpg);
 }
 
+.grid .the-fam::before {
+  @include menuBoxBackground();
+  background-image: url(/images/temp-our-family-pic.jpg);
+}
+
+.grid .the-fam .fam-content {
+  position: relative;
+}
+
 .grid .catering {
   @include menuBox();
 
   // background-image: url(/images/catering-menu-background.jpg);
-  filter: grayscale(100%);
+}
+
+.grid .catering::before {
+  @include menuBoxBackground();
+  background-image: url(/images/catering-menu-background.jpg);
+}
+
+.grid .catering .catering-content {
+  position: relative;
 }
 /*Grid Menu section ends*/
 

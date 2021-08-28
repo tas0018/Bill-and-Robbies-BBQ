@@ -117,6 +117,24 @@ a {
   font-size: 6rem;
 }
 
+.grid .menus::before {
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  background-image: url(/images/full-menu-background.jpg);
+}
+
+.grid .menus .menus-content {
+  position: relative;
+}
+
 .grid .the-fam {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,6 +152,24 @@ a {
   font-size: 6rem;
 }
 
+.grid .the-fam::before {
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  background-image: url(/images/temp-our-family-pic.jpg);
+}
+
+.grid .the-fam .fam-content {
+  position: relative;
+}
+
 .grid .catering {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,12 +181,28 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 
 .grid .catering h2 {
   font-size: 6rem;
+}
+
+.grid .catering::before {
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  background-image: url(/images/catering-menu-background.jpg);
+}
+
+.grid .catering .catering-content {
+  position: relative;
 }
 
 /*Grid Menu section ends*/
