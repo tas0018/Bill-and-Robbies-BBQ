@@ -40,7 +40,6 @@ $dark-charcoal: #333333;
   left: 0;
   width: 100%;
   height: 100%;
-  filter: grayscale(100%);
 }
 
 html {
@@ -66,7 +65,7 @@ a {
 
 /*Hero Section Starts*/
 .hero {
-  background-image: url(/images/temp-background.jpg);
+  background-image: url(/images/hero-image-3.jpg);
   background-size: cover;
   display: block;
   position: relative;
@@ -90,8 +89,10 @@ a {
   grid-auto-rows: 70vh;
 }
 
+
+
 .grid > div {
-  background: #ddd;
+
   padding: 1em;
 }
 
@@ -103,12 +104,20 @@ a {
 
 .grid .about-us::before {
   @include menuBoxBackground();
-  background-image: url(/images/our-story-background.jpg);
-  
+  background-image: url(/images/about-us-b-w.jpg);
+  // background-color: rgba(3, 177, 250, 0.8);
+  // background-blend-mode: multiply;
 }
 
 .grid .about-us .about-us-content {
   position: relative;
+  z-index: 1000;
+
+  h2 {
+    position: relative;
+    color: $white;
+    z-index: 1000;
+  }
 }
 
 .grid .menus {
@@ -119,12 +128,19 @@ a {
 
 .grid .menus::before {
   @include menuBoxBackground();
-  background-image: url(/images/full-menu-background.jpg);
+  background-image: url(/images/menu-b-w.jpg);
 
 }
  
 .grid .menus .menus-content {
   position: relative;
+  z-index: 1000;
+
+  h2 {
+    position: relative;
+    color: $white;
+    z-index: 1000;
+  }
 }
 
 .grid .the-fam {
@@ -135,11 +151,18 @@ a {
 
 .grid .the-fam::before {
   @include menuBoxBackground();
-  background-image: url(/images/temp-our-family-pic.jpg);
+  background-image: url(/images/fam-b-w.jpg);
 }
 
 .grid .the-fam .fam-content {
   position: relative;
+  z-index: 1000;
+
+  h2 {
+    position: relative;
+    color: $white;
+    z-index: 1000;
+  }
 }
 
 .grid .catering {
@@ -150,12 +173,53 @@ a {
 
 .grid .catering::before {
   @include menuBoxBackground();
-  background-image: url(/images/catering-menu-background.jpg);
+  background-image: url(/images/cater-b-w.jpg);
 }
 
 .grid .catering .catering-content {
   position: relative;
+  z-index: 1000;
+
+  h2 {
+    position: relative;
+    color: $white;
+    z-index: 1000;
+  }
 }
+
+//Overlay
+.overlay {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $blue;
+  z-index: 2;
+}
+
+// hover overlay
+.grid .about-us:hover .overlay {
+  opacity: 0.6;
+}
+
+.grid .menus:hover .overlay {
+  opacity: 0.6;
+}
+
+.grid .the-fam:hover .overlay {
+  opacity: 0.6;
+}
+
+.grid .catering:hover .overlay {
+  opacity: 0.6;
+}
+
 /*Grid Menu section ends*/
 
 /*Menu Page Starts*/
