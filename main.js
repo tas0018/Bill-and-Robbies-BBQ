@@ -16,3 +16,9 @@ tabs.forEach((tab) => {
     target.classList.add("active");
   });
 });
+
+//Nav Code
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("#desktop-nav");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});

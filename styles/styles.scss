@@ -25,6 +25,7 @@ $dark-charcoal: #333333;
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 
   h2 {
     font-size: 6rem;
@@ -53,6 +54,69 @@ body {
 
 a {
   text-decoration: none;
+}
+
+/*Nav Code Starts here*/
+
+header #desktop-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 0.5rem 4rem;
+  z-index: 2000;
+  background: $white;
+}
+
+header #desktop-nav.sticky {
+  padding: 0.5rem 4rem;
+  background: $dark-grey;
+}
+
+header #desktop-nav .logo {
+  position: relative;
+  font-weight: 700;
+  color: $black;
+  text-decoration: none;
+  font-size: 4rem;
+  text-transform: uppercase;
+  transition: 0.6s;
+  z-index: 100;
+}
+
+header #desktop-nav ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header #desktop-nav ul li {
+  position: relative;
+  list-style: none;
+}
+
+header #desktop-nav ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: $black;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 2rem;
+  transition: 0.6s;
+}
+header #desktop-nav.sticky .logo,
+header #desktop-nav.sticky ul li a {
+  color: $white;
+}
+
+header #desktop-nav ul li a:hover {
+  color: $blue;
 }
 
 .container {
@@ -89,10 +153,7 @@ a {
   grid-auto-rows: 70vh;
 }
 
-
-
 .grid > div {
-
   padding: 1em;
 }
 
@@ -129,9 +190,8 @@ a {
 .grid .menus::before {
   @include menuBoxBackground();
   background-image: url(/images/menu-b-w.jpg);
-
 }
- 
+
 .grid .menus .menus-content {
   position: relative;
   z-index: 1000;
@@ -198,7 +258,7 @@ a {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: $blue;
   z-index: 2;
 }
