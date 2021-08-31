@@ -24,9 +24,3 @@ window.addEventListener("scroll", function () {
 });
 
 //Mobile Nav Code
-
-onClickMenu = () => {
-  document.getElementById("hamburger").classList.toggle("change");
-  document.getElementById("mobile-nav-links").classList.toggle("change");
-  document.getElementById("hamburger-circle").classList.toggle("change-circle");
-};
