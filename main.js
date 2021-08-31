@@ -22,3 +22,9 @@ window.addEventListener("scroll", function () {
   var header = document.querySelector("#desktop-nav");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
+
+//Mobile Nav Code
+
+onClickMenu = () => {
+
+}

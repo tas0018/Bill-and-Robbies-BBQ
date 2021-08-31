@@ -98,6 +98,66 @@ header #desktop-nav ul li a:hover {
   color: #03b1fa;
 }
 
+/*Mobile Nav*/
+header #mobile-nav {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8vh;
+  background-color: #212121;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 1500;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+header #logo-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header #logo-mobile a {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40px;
+  height: 40px;
+  margin-top: 1.4rem;
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  border-radius: 5px;
+}
+
+#bar1 {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+#bar3 {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
 .container {
   min-height: 100vh;
   width: 100%;
@@ -120,6 +180,7 @@ header #desktop-nav ul li a:hover {
   position: relative;
   opacity: 0.8;
   background-repeat: no-repeat;
+  background-position: top center;
   /*
     Parallax code below
     fixed for parallax
@@ -654,6 +715,10 @@ footer .links li .desktop-footer-link {
 
 /*Media Queries*/
 @media screen and (max-width: 600px) {
+  /*Nav media queries*/
+  #desktop-nav {
+    display: none !important;
+  }
   .menu-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
