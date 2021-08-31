@@ -120,52 +120,6 @@ header #desktop-nav ul li a:hover {
 }
 
 /*Mobile Nav*/
-header #mobile-nav {
-  position: fixed;
-  // top: 0;
-  // left: 0;
-  width: 100%;
-  display: flex;
-  height: 8vh;
-  background-color: $dark-grey;
-  opacity: 1;
-  cursor: pointer;
-  z-index: 1500;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-}
-
-header #logo-mobile {
-  display: flex;
-   a {
-     font-size: 3rem;
-     color: $white;
-   }
-}
-
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  width: 40px;
-  height: 40px;
-  margin-top: 1.4rem;
-}
-
-.bar {
-  height: 4px;
-  width: 100%;
-  background-color: $white;
-  display: block;
-  border-radius: 5px;
-}
-
-#bar1 {
-  transform: translateY(-6px);
-}
-
-#bar3 {
-  transform: translateY(6px);
-}
 
 .container {
   min-height: 100vh;
@@ -612,7 +566,6 @@ footer {
   }
 
   #mobile-nav {
-
   }
 
   .menu-grid {
