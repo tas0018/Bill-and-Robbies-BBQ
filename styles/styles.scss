@@ -57,69 +57,43 @@ a {
 }
 
 /*Nav Code Starts here*/
-
-header #desktop-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.6s;
-  padding: 0.5rem 4rem;
-  z-index: 2000;
-  background: $white;
+  padding: 0 4rem;
+  min-height: 8vh;
+  background-color: $dark-grey;
+  //font-family: ;
 }
 
-header #desktop-nav.sticky {
-  padding: 0.5rem 4rem;
-  background: $dark-grey;
-}
-
-header #desktop-nav .logo {
-  position: relative;
-  font-weight: 700;
-  color: $black;
-  text-decoration: none;
-  font-size: 4rem;
+.logo {
+  color: $white;
   text-transform: uppercase;
-  transition: 0.6s;
-  z-index: 100;
+  letter-spacing: 5px;
+  
+  h4 {
+    font-size: 2.5rem;
+  }
 }
 
-header #desktop-nav ul {
-  position: relative;
+.nav-links {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  width: 45%;
 }
 
-header #desktop-nav ul li {
-  position: relative;
+.nav-links li {
   list-style: none;
 }
 
-header #desktop-nav ul li a {
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
-  color: $black;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 2rem;
-  transition: 0.6s;
-}
-header #desktop-nav.sticky .logo,
-header #desktop-nav.sticky ul li a {
+.nav-links a {
   color: $white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
-
-header #desktop-nav ul li a:hover {
-  color: $blue;
-}
-
-/*Mobile Nav*/
 
 .container {
   min-height: 100vh;
@@ -561,12 +535,8 @@ footer {
 // Menu Page Queries
 @media screen and (max-width: 600px) {
   /*Nav media queries*/
-  #desktop-nav {
-    display: none !important;
-  }
+ 
 
-  #mobile-nav {
-  }
 
   .menu-grid {
     flex-direction: column-reverse;
