@@ -93,6 +93,11 @@ nav {
   font-size: 1.4rem;
   letter-spacing: 2px;
   font-weight: 100;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: $blue;
 }
 
 .container {
