@@ -25,6 +25,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -33,7 +34,9 @@ nav {
           align-items: center;
   padding: 0 4rem;
   min-height: 8vh;
+  width: 100vw;
   background-color: #212121;
+  z-index: 2000;
 }
 
 .logo {
@@ -53,6 +56,7 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 45%;
+  z-index: 2000;
 }
 
 .nav-links li {
@@ -71,6 +75,19 @@ nav {
 
 .nav-links a:hover {
   color: #03b1fa;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 5px;
 }
 
 .container {
@@ -629,8 +646,59 @@ footer .links li .desktop-footer-link {
 }
 
 /*Media Queries*/
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   /*Nav media queries*/
+  nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #212121;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.4s ease-in;
+    transition: -webkit-transform 0.4s ease-in;
+    transition: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links a {
+    font-size: 2.3rem;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  /*Menu Media Queries*/
   .menu-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -671,6 +739,32 @@ footer .links li .desktop-footer-link {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 /*# sourceMappingURL=styles.css.map */

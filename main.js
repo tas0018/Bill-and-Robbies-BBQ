@@ -18,9 +18,25 @@ tabs.forEach((tab) => {
 });
 
 //Nav Code
-window.addEventListener("scroll", function () {
-  var header = document.querySelector("#desktop-nav");
-  header.classList.toggle("sticky", window.scrollY > 0);
-});
+const navClick = () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navSideBar = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
 
-//Mobile Nav Code
+  //Toggle nav
+  hamburger.addEventListener("click", () => {
+    navSideBar.classList.toggle("nav-active");
+
+    //Animate links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.7s ease forwards 
+      ${index / 5 + 0.6}s`;
+      }
+    });
+  });
+};
+
+navClick();
