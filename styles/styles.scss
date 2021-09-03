@@ -107,14 +107,49 @@ nav {
 .hamburger {
   display: none;
   cursor: pointer;
+  height: 40px;
+  width: 40px;
 }
 
 .hamburger div {
-  width: 35px;
+  display: flex;
+  width: 40px;
   height: 3px;
   background-color: $white;
-  margin: 5px;
+  // margin: 5px;
   border-radius: 5px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.hamburger .bar1 {
+  top: 15%;
+  left: 0;
+}
+
+.hamburger .bar2 {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.hamburger .bar3 {
+  bottom: 15%;
+  left: 0;
+}
+
+.nav-toggle .bar1 {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.nav-toggle .bar2 {
+  opacity: 0;
+}
+
+.nav-toggle .bar3 {
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
 }
 
 .container {
@@ -592,7 +627,8 @@ footer {
   }
 
   .hamburger {
-    display: block;
+    display: inline-flex;
+    position: relative;
   }
 
   .nav-active {

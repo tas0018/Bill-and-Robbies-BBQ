@@ -80,14 +80,54 @@ nav {
 .hamburger {
   display: none;
   cursor: pointer;
+  height: 40px;
+  width: 40px;
 }
 
 .hamburger div {
-  width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
   height: 3px;
   background-color: #fff;
-  margin: 5px;
   border-radius: 5px;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hamburger .bar1 {
+  top: 15%;
+  left: 0;
+}
+
+.hamburger .bar2 {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.hamburger .bar3 {
+  bottom: 15%;
+  left: 0;
+}
+
+.nav-toggle .bar1 {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+
+.nav-toggle .bar2 {
+  opacity: 0;
+}
+
+.nav-toggle .bar3 {
+  bottom: 50%;
+  -webkit-transform: translateY(50%) rotate(45deg);
+          transform: translateY(50%) rotate(45deg);
 }
 
 .container {
@@ -692,7 +732,10 @@ footer .links li .desktop-footer-link {
     font-size: 2.3rem;
   }
   .hamburger {
-    display: block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
   }
   .nav-active {
     -webkit-transform: translateX(0%);

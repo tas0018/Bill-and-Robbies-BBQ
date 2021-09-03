@@ -36,6 +36,9 @@ const navClick = () => {
       ${index / 5 + 0.6}s`;
       }
     });
+
+    //hamburger animation
+    hamburger.classList.toggle("nav-toggle");
   });
 };
 
