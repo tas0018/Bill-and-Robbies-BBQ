@@ -139,17 +139,23 @@ nav {
 }
 
 .nav-toggle .bar1 {
+  animation: top-line-to-x 0.8s ease-in forwards,
+    top-line-rotate 0.25s 0.4s ease-in forwards;
   top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
+  transform-origin: center;
+  //transform: translateY(-50%) rotate(-45deg);
 }
 
 .nav-toggle .bar2 {
-  opacity: 0;
+  animation: fade 0.4s ease-in forwards;
+  opacity: 1;
 }
 
 .nav-toggle .bar3 {
-  bottom: 50%;
-  transform: translateY(50%) rotate(45deg);
+  animation: bottom-line-to-x 0.8s ease-in forwards,
+    bottom-line-rotate 0.25s 0.4s ease-in forwards;
+  bottom: 45%;
+  //transform: translateY(50%) rotate(45deg);
 }
 
 .container {
@@ -691,5 +697,53 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@keyframes top-line-to-x {
+  0% {
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes top-line-rotate {
+  0% {
+  }
+  100% {
+    transform: rotateZ(-45deg);
+  }
+}
+
+@keyframes mid-line-to-x {
+  0% {
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottom-line-to-x {
+  0% {
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+@keyframes bottom-line-rotate {
+  0% {
+  }
+  100% {
+    transform: rotateZ(45deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+  }
+  100% {
+    opacity: 0;
   }
 }
