@@ -206,6 +206,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
+  background-position: center;
   background-image: url(/images/about-us-b-w.jpg);
 }
 
@@ -247,6 +248,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
+  background-position: center;
   background-image: url(/images/menu-b-w.jpg);
 }
 
@@ -288,6 +290,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
+  background-position: center;
   background-image: url(/images/fam-b-w.jpg);
 }
 
@@ -329,6 +332,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
+  background-position: center;
   background-image: url(/images/cater-b-w.jpg);
 }
 
@@ -563,6 +567,12 @@ nav {
 }
 
 /*Menu Page content ends*/
+/*The Fam Page starts*/
+.the-fam {
+  margin-top: 8vh;
+}
+
+/*The Fam Page ends*/
 /*Footer starts*/
 footer {
   display: -webkit-box;
@@ -744,6 +754,10 @@ footer .links li .desktop-footer-link {
   .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+  }
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   /*Menu Media Queries*/
   .menu-grid {
