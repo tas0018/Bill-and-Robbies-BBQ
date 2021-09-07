@@ -159,6 +159,32 @@ nav {
   //transform: translateY(50%) rotate(45deg);
 }
 
+#the-fam {
+  margin-top: 8vh;
+  height: 92vh;
+  width: 100vw;
+
+  /*Swiper JS code*/
+  .swiper {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: #000;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+}
+
 .container {
   min-height: 100vh;
   width: 100%;

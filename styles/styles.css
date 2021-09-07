@@ -134,6 +134,32 @@ nav {
   bottom: 45%;
 }
 
+#the-fam {
+  margin-top: 8vh;
+  height: 92vh;
+  width: 100vw;
+  /*Swiper JS code*/
+}
+
+#the-fam .swiper {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 50px;
+}
+
+#the-fam .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  background: #000;
+}
+
+#the-fam .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
 .container {
   min-height: 100vh;
   width: 100%;
