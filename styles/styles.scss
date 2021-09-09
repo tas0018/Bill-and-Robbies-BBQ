@@ -18,6 +18,7 @@ $dark-blue: #050a30;
 $black: #121212;
 $gun-smoke: #878787;
 $dark-charcoal: #333333;
+$yellow: #ffdb58;
 
 //Sass mixins
 @mixin menuBox {
@@ -161,14 +162,32 @@ nav {
 
 #the-fam {
   margin-top: 8vh;
-  height: 92vh;
+  height: 106vh;
   width: 100vw;
+  background-color: #343434;
+  flex-direction: column;
+
+  .fam-headline {
+    display: flex;
+    height: 8vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+
+    h1 {
+      font-size: 8rem;
+      letter-spacing: 2px;
+      color: $white;
+    }
+  }
 
   /*Swiper JS code*/
   .swiper {
     width: 100%;
-    padding-top: 10%;
-    padding-bottom: 50px;
+    padding-top: 5%;
+    height: inherit;
+    //padding-bottom: max(10%);
   }
 
   .swiper-slide {
@@ -176,7 +195,8 @@ nav {
     background-size: cover;
     width: 300px;
     height: 420px;
-    
+    -webkit-box-reflect: below 0.1rem
+      linear-gradient(transparent, transparent, $black);
 
     .card {
       position: relative;
@@ -206,7 +226,7 @@ nav {
 
 .swiper-slide .card:hover {
   transform: translateY(-20px);
-  box-shadow: 0 20px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 .swiper-slide .card:hover .img-box {
@@ -217,24 +237,60 @@ nav {
   position: absolute;
   width: 100%;
   height: 60%;
-  bottom: 100%;
+  bottom: -100%;
   padding: 20px;
   padding-top: 5rem;
   box-sizing: border-box;
   text-align: center;
   transition: 0.5s;
-}
-
-.swiper-slide .card:hover .card-content {
-  bottom: 0;
-  background: linear-gradient(0deg, $blue, transparent);
 
   h2 {
     color: $white;
     margin: 0 0 1rem;
     padding: 0;
-    font-size: 1.8Frem;
+    font-size: 1.8rem;
   }
+
+  h3 {
+    color: $yellow;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: $white;
+    font-size: 1.4rem;
+  }
+
+  ul {
+    display: flex;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      list-style: none;
+
+      a {
+        color: $white;
+        padding: 0 2rem;
+        transition: 0.5s;
+
+        i {
+          font-size: 2.5rem;
+          padding-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.swiper-slide .card:hover .card-content {
+  bottom: 0;
+  background: linear-gradient(0deg, $blue, transparent);
 }
 
 .container {
