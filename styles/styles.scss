@@ -67,7 +67,7 @@ nav {
   padding: 0 4rem;
   min-height: 8vh;
   width: 100vw;
-  background-color: $dark-grey;
+  background-color: $black;
   z-index: 2000;
   //font-family: ;
 }
@@ -164,7 +164,7 @@ nav {
   margin-top: 8vh;
   height: 106vh;
   width: 100vw;
-  background-color: #343434;
+  background-color: $dark-grey; // #9b7878;
   flex-direction: column;
 
   .fam-headline {
