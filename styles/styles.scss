@@ -175,13 +175,65 @@ nav {
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 300px;
-    background: #000;
-  }
+    height: 420px;
+    
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
+    .card {
+      position: relative;
+      background: #000;
+      height: inherit;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: 0.5s;
+
+      .img-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 420px;
+        transition: 0.5s;
+
+        img {
+          width: 100%;
+          height: inherit;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.swiper-slide .card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 20px 2px rgba(0,0,0,0.2);
+}
+
+.swiper-slide .card:hover .img-box {
+  opacity: 0.5;
+}
+
+.swiper-slide .card .card-content {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: 100%;
+  padding: 20px;
+  padding-top: 5rem;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.swiper-slide .card:hover .card-content {
+  bottom: 0;
+  background: linear-gradient(0deg, $blue, transparent);
+
+  h2 {
+    color: $white;
+    margin: 0 0 1rem;
+    padding: 0;
+    font-size: 1.8Frem;
   }
 }
 
@@ -524,9 +576,6 @@ nav {
 /*Menu Page content ends*/
 
 /*The Fam Page starts*/
-.the-fam {
-  margin-top: 8vh;
-}
 /*The Fam Page ends*/
 
 /*Footer starts*/

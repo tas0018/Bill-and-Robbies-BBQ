@@ -115,8 +115,8 @@ nav {
 }
 
 .nav-toggle .bar1 {
-  -webkit-animation: top-line-to-x 0.8s ease-in forwards, top-line-rotate 0.25s 0.4s ease-in forwards;
-          animation: top-line-to-x 0.8s ease-in forwards, top-line-rotate 0.25s 0.4s ease-in forwards;
+  -webkit-animation: top-line-to-x 0.8s ease-in forwards, top-line-rotate 0.25s 0.4s ease-in forwards;
+          animation: top-line-to-x 0.8s ease-in forwards, top-line-rotate 0.25s 0.4s ease-in forwards;
   top: 50%;
   -webkit-transform-origin: center;
           transform-origin: center;
@@ -129,8 +129,8 @@ nav {
 }
 
 .nav-toggle .bar3 {
-  -webkit-animation: bottom-line-to-x 0.8s ease-in forwards, bottom-line-rotate 0.25s 0.4s ease-in forwards;
-          animation: bottom-line-to-x 0.8s ease-in forwards, bottom-line-rotate 0.25s 0.4s ease-in forwards;
+  -webkit-animation: bottom-line-to-x 0.8s ease-in forwards, bottom-line-rotate 0.25s 0.4s ease-in forwards;
+          animation: bottom-line-to-x 0.8s ease-in forwards, bottom-line-rotate 0.25s 0.4s ease-in forwards;
   bottom: 45%;
 }
 
@@ -151,13 +151,72 @@ nav {
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 300px;
-  background: #000;
+  height: 420px;
 }
 
-#the-fam .swiper-slide img {
-  display: block;
+#the-fam .swiper-slide .card {
+  position: relative;
+  background: #000;
+  height: inherit;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#the-fam .swiper-slide .card .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 420px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#the-fam .swiper-slide .card .img-box img {
   width: 100%;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-slide .card:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide .card:hover .img-box {
+  opacity: 0.5;
+}
+
+.swiper-slide .card .card-content {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: 100%;
+  padding: 20px;
+  padding-top: 5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.swiper-slide .card:hover .card-content {
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#03b1fa), to(transparent));
+  background: linear-gradient(0deg, #03b1fa, transparent);
+}
+
+.swiper-slide .card:hover .card-content h2 {
+  color: #fff;
+  margin: 0 0 1rem;
+  padding: 0;
+  font-size: 1.8Frem;
 }
 
 .container {
@@ -594,10 +653,6 @@ nav {
 
 /*Menu Page content ends*/
 /*The Fam Page starts*/
-.the-fam {
-  margin-top: 8vh;
-}
-
 /*The Fam Page ends*/
 /*Footer starts*/
 footer {
