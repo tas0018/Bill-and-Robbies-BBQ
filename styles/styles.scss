@@ -210,8 +210,10 @@ nav {
         position: absolute;
         top: 0;
         left: 0;
-        width: 300px;
-        height: 420px;
+        //width: 300px;
+        //height: 420px;
+        width: inherit;
+        height: inherit;
         transition: 0.5s;
 
         img {
@@ -781,6 +783,29 @@ footer {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  /*Fam Page Media Queries*/
+  #the-fam {
+    height: 90vh;
+  }
+
+  #the-fam .fam-headline {
+    margin: 12% 0;
+
+    h1 {
+      font-size: 6.5rem;
+    }
+    //padding-bottom: 5%;
+  }
+
+  #the-fam .swiper-slide {
+    width: 202px;
+    height: 366px;
+  }
+
+  #the-fam .swiper-slide .card .img-box {
+    object-position: 10% 10%;
   }
 
   /*Menu Media Queries*/
