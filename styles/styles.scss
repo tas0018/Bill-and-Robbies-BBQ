@@ -160,6 +160,8 @@ nav {
   //transform: translateY(50%) rotate(45deg);
 }
 
+/*The Fam Page starts*/
+
 #the-fam {
   margin-top: 8vh;
   height: 106vh;
@@ -295,8 +297,18 @@ nav {
   background: linear-gradient(0deg, $blue, transparent);
 }
 
+/*The Fam Page ends*/
+
 .container {
   min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.folded-container {
+  min-height: 87.5vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -633,8 +645,60 @@ nav {
 }
 /*Menu Page content ends*/
 
-/*The Fam Page starts*/
-/*The Fam Page ends*/
+/*Catering Page Code Starts*/
+.catering {
+  background-image: url(/images/catering-hero-temp.jpg);
+  background-size: cover;
+  display: flex;
+  position: relative;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-position: top center;
+  /*
+    Parallax code below
+    fixed for parallax
+    scroll for normal scrolling
+    */
+  background-attachment: fixed;
+}
+
+.catering-headline {
+  display: flex;
+  height: 8vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+
+  h1 {
+    font-size: 7rem;
+    letter-spacing: 4px;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+#catering-services {
+  min-height: 40vh;
+}
+
+.services-content {
+  display: flex;
+}
+
+.catering-services-headline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    padding-top: 2.5%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    //color: $blue;
+  }
+}
+/*Catering Page Code Ends*/
 
 /*Footer starts*/
 footer {
