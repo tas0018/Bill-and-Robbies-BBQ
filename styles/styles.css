@@ -740,7 +740,7 @@ nav {
 /*Menu Page content ends*/
 /*Catering Page Code Starts*/
 .catering {
-  background-image: url(/images/catering-hero-temp.jpg);
+  background: url(/images/catering-hero-temp.jpg) rgba(3, 177, 250, 0.9);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,6 +749,7 @@ nav {
   opacity: 0.8;
   background-repeat: no-repeat;
   background-position: top center;
+  background-blend-mode: multiply;
   /*
     Parallax code below
     fixed for parallax
@@ -833,6 +834,7 @@ nav {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #03b1fa;
 }
 
 .catering-services-content div p {
@@ -858,7 +860,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 4rem;
+  font-size: 5rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 200;
@@ -886,7 +888,79 @@ nav {
 
 #catering-menu {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
+}
+
+.dinner-package {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dinner-package h1 {
+  padding-top: 5%;
+  font-size: 7rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.dinner-package h2 {
+  padding-top: 1rem;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #03b1fa;
+}
+
+.dinner-package h3 {
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.catering-menu-container {
+  padding: 5% 10%;
+}
+
+.catering-menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.catering-menu-grid div {
+  text-align: center;
+}
+
+.catering-menu-grid div h1 {
+  font-size: 6rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  color: #03b1fa;
+}
+
+.catering-menu-grid div h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-top: 1.5rem;
+}
+
+.catering-menu-grid div h3 {
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 /*Catering Page Code Ends*/
@@ -1122,6 +1196,7 @@ footer .links li .desktop-footer-link {
   .btn {
     padding: 1.5rem 1.5rem;
   }
+  /*Catering Page Media Queries*/
   .footer-icons {
     display: none !important;
   }
