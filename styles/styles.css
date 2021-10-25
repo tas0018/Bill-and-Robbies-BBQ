@@ -965,6 +965,77 @@ nav {
 }
 
 /*Catering Page Code Ends*/
+/*About Us Page Code Starts*/
+#about-us-hero {
+  min-height: 92vh;
+  background: #333333;
+  width: 100%;
+  margin-top: 8vh;
+}
+
+.about-us-grid {
+  display: -ms-grid;
+  display: grid;
+  min-height: inherit;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+}
+
+.about-us-grid .grid-item {
+  background: red;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+.about-us-grid .grid-item.small {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.about-us-grid .grid-item.medium {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.about-us-grid .grid-item.large {
+  grid-row: span 3;
+  grid-column: span 3;
+}
+
+.about-us-grid .grid-item.tall {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+
+.about-us-grid .grid-item.shaq-tall {
+  grid-row: span 6;
+  grid-column: span 2;
+}
+
+.about-us-grid .grid-item.wide {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+#about-us-content {
+  height: 100vh;
+  background: orange;
+  width: 100%;
+}
+
+/*About Us Page Code Ends*/
 /*Footer starts*/
 footer {
   display: -webkit-box;

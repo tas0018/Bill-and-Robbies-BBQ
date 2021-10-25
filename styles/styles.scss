@@ -835,6 +835,68 @@ nav {
 }
 /*Catering Page Code Ends*/
 
+/*About Us Page Code Starts*/
+#about-us-hero {
+  min-height: 92vh;
+  background: $dark-charcoal;
+  width: 100%;
+  margin-top: 8vh;
+}
+
+.about-us-grid {
+  display: grid;
+  min-height: inherit;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+}
+
+.about-us-grid .grid-item {
+  background: red;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+
+  &.small {
+    grid-row: span 2;
+    grid-column: span 1;
+  }
+
+  &.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  &.large {
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+
+  &.tall {
+    grid-row: span 3;
+    grid-column: span 2;
+  }
+
+  &.shaq-tall {
+    grid-row: span 6;
+    grid-column: span 2;
+  }
+
+  &.wide {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+
+#about-us-content {
+  height: 100vh;
+  background: orange;
+  width: 100%;
+}
+/*About Us Page Code Ends*/
+
 /*Footer starts*/
 footer {
   display: flex;
