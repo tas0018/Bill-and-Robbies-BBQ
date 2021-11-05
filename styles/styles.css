@@ -336,6 +336,31 @@ nav {
   background-attachment: fixed;
 }
 
+.hero .headline {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: inherit;
+}
+
+.hero .headline h1 {
+  font-size: 6.5rem;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  -webkit-animation: fadeInAndDown 1.9s;
+          animation: fadeInAndDown 1.9s;
+}
+
 /*Hero Section Ends*/
 /*Grid Menu section starts*/
 .grid {
@@ -985,7 +1010,8 @@ nav {
 }
 
 .about-us-grid .grid-item {
-  background: red;
+  background: #03b1fa;
+  background: linear-gradient(128deg, rgba(3, 177, 250, 0.990651) 0%, #028ec8 100%);
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -999,9 +1025,21 @@ nav {
   font-size: 2rem;
 }
 
+.about-us-grid .grid-item h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #e6e6e6;
+}
+
+.about-us-grid .grid-item.taller {
+  grid-row: span 4;
+  grid-column: span 2;
+}
+
 .about-us-grid .grid-item.small {
   grid-row: span 2;
-  grid-column: span 1;
+  grid-column: span 2;
 }
 
 .about-us-grid .grid-item.medium {
@@ -1017,6 +1055,10 @@ nav {
 .about-us-grid .grid-item.tall {
   grid-row: span 3;
   grid-column: span 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about-us-grid .grid-item.shaq-tall {
@@ -1029,9 +1071,35 @@ nav {
   grid-column: span 2;
 }
 
+.about-us-grid .grid-item.thin {
+  grid-row: span 4;
+  grid-column: span 1;
+}
+
+.about-us-grid .grid-item#about-pic-one {
+  background-image: url(/images/aboutUsPictures/robbie-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-us-grid .grid-item#about-pic-two {
+  background-image: url(/images/aboutUsPictures/bill-sign-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.about-us-grid .grid-item#about-pic-three {
+  background-image: url(/images/aboutUsPictures/Glazed-Piggy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+
 #about-us-content {
   height: 100vh;
-  background: orange;
+  background: #e6e6e6;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1051,7 +1119,7 @@ nav {
 #the-vision {
   height: 60vh;
   width: 100%;
-  background: blue;
+  background: #cccccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1480,6 +1548,28 @@ footer .links li .desktop-footer-link {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeInAndDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAndDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=styles.css.map */

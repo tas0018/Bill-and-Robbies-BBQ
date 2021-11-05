@@ -10,9 +10,10 @@
 $MainFont: "Open Sans", sans-serif;
 
 //Colors
-$off-white: #e8eef1;
+$off-white-two: #cccccc;
 $blue: #03b1fa;
 $white: #fff;
+$off-white: #e6e6e6;
 $dark-grey: #212121;
 $dark-blue: #050a30;
 $black: #121212;
@@ -330,6 +331,24 @@ nav {
     scroll for normal scrolling
     */
   background-attachment: fixed;
+
+  .headline {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: inherit;
+
+    h1 {
+      font-size: 6.5rem;
+      color: $white;
+      letter-spacing: 2px;
+      font-family: $MainFont;
+      font-weight: 500;
+      animation: fadeInAndDown 1.9s;
+    }
+  }
 }
 
 /*Hero Section Ends*/
@@ -852,16 +871,33 @@ nav {
 }
 
 .about-us-grid .grid-item {
-  background: red;
+  background: rgb(3, 177, 250);
+  background: linear-gradient(
+    128deg,
+    rgba(3, 177, 250, 0.9906513630842962) 0%,
+    rgba(2, 142, 200, 1) 100%
+  );
   font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
 
+  h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: $off-white;
+  }
+
+  &.taller {
+    grid-row: span 4;
+    grid-column: span 2;
+  }
+
   &.small {
     grid-row: span 2;
-    grid-column: span 1;
+    grid-column: span 2;
   }
 
   &.medium {
@@ -877,6 +913,7 @@ nav {
   &.tall {
     grid-row: span 3;
     grid-column: span 2;
+    flex-direction: column;
   }
 
   &.shaq-tall {
@@ -888,11 +925,37 @@ nav {
     grid-row: span 2;
     grid-column: span 2;
   }
+
+  &.thin {
+    grid-row: span 4;
+    grid-column: span 1;
+  }
+
+  &#about-pic-one {
+    background-image: url(/images/aboutUsPictures/robbie-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &#about-pic-two {
+    background-image: url(/images/aboutUsPictures/bill-sign-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+  }
+
+  &#about-pic-three {
+    background-image: url(/images/aboutUsPictures/Glazed-Piggy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+  }
 }
 
 #about-us-content {
   height: 100vh;
-  background: orange;
+  background: $off-white;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -903,7 +966,7 @@ nav {
 #the-vision {
   height: 60vh;
   width: 100%;
-  background: blue;
+  background: $off-white-two;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1232,5 +1295,15 @@ footer {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes fadeInAndDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
   }
 }
