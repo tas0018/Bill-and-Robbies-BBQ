@@ -359,6 +359,7 @@ nav {
   font-weight: 500;
   -webkit-animation: fadeInAndDown 1.9s;
           animation: fadeInAndDown 1.9s;
+  text-align: center;
 }
 
 /*Hero Section Ends*/
@@ -1029,7 +1030,7 @@ nav {
   font-size: 6rem;
   font-weight: 500;
   letter-spacing: 2px;
-  color: #e6e6e6;
+  color: #fff;
 }
 
 .about-us-grid .grid-item.taller {
@@ -1074,6 +1075,22 @@ nav {
 .about-us-grid .grid-item.thin {
   grid-row: span 4;
   grid-column: span 1;
+}
+
+.about-us-grid .grid-item#the-story-pic {
+  background-image: url(/images/foodtruck-night.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: grayscale(10%);
+          filter: grayscale(10%);
+}
+
+.about-us-grid .grid-item#the-vision-pic {
+  background-image: url(/images/group-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .about-us-grid .grid-item#about-pic-one {

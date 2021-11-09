@@ -347,6 +347,7 @@ nav {
       font-family: $MainFont;
       font-weight: 500;
       animation: fadeInAndDown 1.9s;
+      text-align: center;
     }
   }
 }
@@ -887,7 +888,7 @@ nav {
     font-size: 6rem;
     font-weight: 500;
     letter-spacing: 2px;
-    color: $off-white;
+    color: $white;
   }
 
   &.taller {
@@ -929,6 +930,21 @@ nav {
   &.thin {
     grid-row: span 4;
     grid-column: span 1;
+  }
+
+  &#the-story-pic {
+    background-image: url(/images/foodtruck-night.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(10%);
+  }
+
+  &#the-vision-pic {
+    background-image: url(/images/group-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   &#about-pic-one {
