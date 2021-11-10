@@ -20,6 +20,14 @@ a {
   text-decoration: none;
 }
 
+/*Preloader Code*/
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 /*Nav Code Starts here*/
 nav {
   display: -webkit-box;
