@@ -1,9 +1,3 @@
-//Preloader Codegit
-
-$(window).load(function () {
-  $("body").removeClass("preload");
-});
-
 const tabs = document.querySelectorAll("[data-tab-target]");
 const tabContents = document.querySelectorAll("[data-tab-target]");
 

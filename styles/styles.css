@@ -20,14 +20,6 @@ a {
   text-decoration: none;
 }
 
-/*Preloader Code*/
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
 /*Nav Code Starts here*/
 nav {
   display: -webkit-box;
@@ -1453,6 +1445,24 @@ footer .links li .desktop-footer-link {
     padding-top: 10%;
   }
   /*Catering Page Media Queries End*/
+  /*About us Media Queries Start*/
+  .about-us-grid {
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+  #about-pic-one {
+    display: none;
+  }
+  #about-pic-two {
+    display: none;
+  }
+  #about-pic-three {
+    display: none;
+  }
+  /*About us Media Queries Ends*/
   .footer-icons {
     display: none !important;
   }

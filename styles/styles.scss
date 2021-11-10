@@ -59,14 +59,6 @@ a {
   text-decoration: none;
 }
 
-/*Preloader Code*/
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
 /*Nav Code Starts here*/
 nav {
   display: flex;
@@ -1259,6 +1251,25 @@ footer {
     padding-top: 10%;
   }
   /*Catering Page Media Queries End*/
+
+  /*About us Media Queries Start*/
+  .about-us-grid {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+
+  #about-pic-one {
+    display: none;
+  }
+  #about-pic-two {
+    display: none;
+  }
+
+  #about-pic-three {
+    display: none;
+  }
+  /*About us Media Queries Ends*/
 
   .footer-icons {
     display: none !important;
