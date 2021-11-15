@@ -194,108 +194,56 @@ nav {
   }
 
   .swiper-slide {
+    position: relative;
     background-position: center;
     background-size: cover;
     width: 300px;
     height: 420px;
     -webkit-box-reflect: below 0.1rem
       linear-gradient(transparent, transparent, $black);
+  }
 
-    .card {
-      position: relative;
-      background: #000;
-      height: inherit;
-      overflow: hidden;
-      border-radius: 10px;
-      transition: 0.5s;
+  .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background: yellow;
+    border-radius: 15px;
+  }
 
-      .img-box {
-        position: absolute;
-        top: 0;
-        left: 0;
-        //width: 300px;
-        //height: 420px;
-        width: inherit;
-        height: inherit;
-        transition: 0.5s;
+  .card:hover {
+    transform: rotateY(180deg);
+  }
 
-        img {
-          width: 100%;
-          height: inherit;
-          object-fit: cover;
-        }
-      }
+  .card-front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    //background: #03b1fa;
+    color: $white;
+    border-radius: 15px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px;
     }
   }
-}
 
-.swiper-slide .card:hover {
-  transform: translateY(-20px);
-  box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
-}
-
-.swiper-slide .card:hover .img-box {
-  opacity: 0.5;
-}
-
-.swiper-slide .card .card-content {
-  position: absolute;
-  width: 100%;
-  height: 60%;
-  bottom: -100%;
-  padding: 20px;
-  padding-top: 5rem;
-  box-sizing: border-box;
-  text-align: center;
-  transition: 0.5s;
-
-  h2 {
+  .card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: $off-white-two;
     color: $white;
-    margin: 0 0 1rem;
-    padding: 0;
-    font-size: 1.8rem;
+    transform: rotateY(180deg);
+    border-radius: 15px;
   }
-
-  h3 {
-    color: $yellow;
-    font-size: 1.4rem;
-    padding-bottom: 1rem;
-  }
-
-  p {
-    margin: 0;
-    padding: 0;
-    color: $white;
-    font-size: 1.4rem;
-  }
-
-  ul {
-    display: flex;
-    margin: 0.5rem 0 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-
-    li {
-      list-style: none;
-
-      a {
-        color: $white;
-        padding: 0 2rem;
-        transition: 0.5s;
-
-        i {
-          font-size: 2.5rem;
-          padding-top: 2rem;
-        }
-      }
-    }
-  }
-}
-
-.swiper-slide .card:hover .card-content {
-  bottom: 0;
-  background: linear-gradient(0deg, $blue, transparent);
 }
 
 /*The Fam Page ends*/

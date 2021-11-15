@@ -175,6 +175,7 @@ nav {
 }
 
 #the-fam .swiper-slide {
+  position: relative;
   background-position: center;
   background-size: cover;
   width: 300px;
@@ -182,112 +183,52 @@ nav {
   -webkit-box-reflect: below 0.1rem linear-gradient(transparent, transparent, #121212);
 }
 
-#the-fam .swiper-slide .card {
-  position: relative;
-  background: #000;
-  height: inherit;
-  overflow: hidden;
-  border-radius: 10px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#the-fam .swiper-slide .card .img-box {
+#the-fam .card {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: inherit;
-  height: inherit;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: yellow;
+  border-radius: 15px;
 }
 
-#the-fam .swiper-slide .card .img-box img {
+#the-fam .card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#the-fam .card-front {
+  position: absolute;
+  height: 100%;
   width: 100%;
-  height: inherit;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  color: #fff;
+  border-radius: 15px;
+}
+
+#the-fam .card-front img {
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 15px;
 }
 
-.swiper-slide .card:hover {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-  -webkit-box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 20px 2px rgba(0, 0, 0, 0.2);
-}
-
-.swiper-slide .card:hover .img-box {
-  opacity: 0.5;
-}
-
-.swiper-slide .card .card-content {
+#the-fam .card-back {
   position: absolute;
+  height: 100%;
   width: 100%;
-  height: 60%;
-  bottom: -100%;
-  padding: 20px;
-  padding-top: 5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.swiper-slide .card .card-content h2 {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: #cccccc;
   color: #fff;
-  margin: 0 0 1rem;
-  padding: 0;
-  font-size: 1.8rem;
-}
-
-.swiper-slide .card .card-content h3 {
-  color: #ffdb58;
-  font-size: 1.4rem;
-  padding-bottom: 1rem;
-}
-
-.swiper-slide .card .card-content p {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  font-size: 1.4rem;
-}
-
-.swiper-slide .card .card-content ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0.5rem 0 0;
-  padding: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.swiper-slide .card .card-content ul li {
-  list-style: none;
-}
-
-.swiper-slide .card .card-content ul li a {
-  color: #fff;
-  padding: 0 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.swiper-slide .card .card-content ul li a i {
-  font-size: 2.5rem;
-  padding-top: 2rem;
-}
-
-.swiper-slide .card:hover .card-content {
-  bottom: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#03b1fa), to(transparent));
-  background: linear-gradient(0deg, #03b1fa, transparent);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 15px;
 }
 
 /*The Fam Page ends*/
