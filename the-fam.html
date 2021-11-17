@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
@@ -53,7 +57,7 @@
     <!-- Slider main container -->
     <div id="the-fam" class="container">
       <div class="fam-headline">
-        <h1>The Team</h1>
+        <h1>Meet the Family</h1>
       </div>
 
       <div class="swiper">
@@ -61,9 +65,46 @@
           <div class="swiper-slide">
             <div class="card">
               <div class="card-front">
-                <img src="./images/theFamPictures/temp-pic-1.jpg" alt="" />
+                <img
+                  src="./images/theFamPictures/Bill-pig.jpg"
+                  alt="Bill cartoon pig picture"
+                />
               </div>
-              <div class="card-back"></div>
+              <div class="card-back">
+                <h1>
+                  <span class="card-info-header">Name</span> : Bill Schwenk
+                </h1>
+                <h1>
+                  <span class="card-info-header">Position</span> : Co-Owner
+                </h1>
+                <h1><span class="card-info-header">Nickname</span> : “Sir”</h1>
+                <h1>
+                  <span class="card-info-header">Number</span> : 02 (God is #1!)
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-front">
+                <img
+                  src="./images/theFamPictures/Robbie-pig.jpg"
+                  alt="Robbie cartoon pig picture"
+                />
+              </div>
+              <div class="card-back">
+                <h1>
+                  <span class="card-info-header">Name</span> : Robbie Hughes
+                </h1>
+                <h1>
+                  <span class="card-info-header">Position</span> : Co-Owner
+                </h1>
+                <h1>
+                  <span class="card-info-header">Nickname</span> : Redneck Chief
+                </h1>
+                <h1><span class="card-info-header">Number</span> : 03</h1>
+              </div>
             </div>
           </div>
         </div>
@@ -82,7 +123,7 @@
               modifier: 1,
               slideShadows: true,
             },
-            loop: true,
+            loop: false,
           });
         </script>
       </div>

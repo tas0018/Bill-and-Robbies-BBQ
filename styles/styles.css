@@ -219,16 +219,39 @@ nav {
 }
 
 #the-fam .card-back {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   width: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: #cccccc;
-  color: #fff;
+  background: #e6e6e6;
+  color: #121212;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   border-radius: 15px;
+}
+
+#the-fam .card-back h1 {
+  padding: 5% 5%;
+  font-size: 1.8rem;
+  font-family: "Black Ops One", cursive;
+}
+
+#the-fam .card-back .card-info-header {
+  color: #03b1fa;
+  font-size: 1.8rem;
 }
 
 /*The Fam Page ends*/

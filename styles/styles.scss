@@ -8,6 +8,7 @@
 /*Sass Variables*/
 //Font
 $MainFont: "Open Sans", sans-serif;
+$CardFont: "Black Ops One", cursive;
 
 //Colors
 $off-white-two: #cccccc;
@@ -235,14 +236,29 @@ nav {
   }
 
   .card-back {
-    position: absolute;
+    //position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
-    background: $off-white-two;
-    color: $white;
+    background: $off-white;
+    color: $black;
     transform: rotateY(180deg);
     border-radius: 15px;
+
+    h1 {
+      padding: 5% 5%;
+      font-size: 1.8rem;
+      font-family: $CardFont;
+    }
+
+    .card-info-header {
+      color: $blue;
+      font-size: 1.8rem;
+    }
   }
 }
 
