@@ -303,6 +303,7 @@ nav {
     align-items: center;
     width: 100%;
     min-height: inherit;
+    flex-direction: column;
 
     h1 {
       font-size: 6.5rem;
@@ -310,8 +311,92 @@ nav {
       letter-spacing: 2px;
       font-family: $MainFont;
       font-weight: 500;
-      animation: fadeInAndDown 1.9s;
+      animation: fadeInAndDown 1.1s;
       text-align: center;
+    }
+
+    .button-container {
+      margin-top: 2rem;
+      position: relative;
+      transition: background 0.5s;
+      overflow: hidden;
+
+      a {
+        color: $white;
+        transition: color 0.5s;
+      }
+    }
+
+    .button-container:hover {
+      color: $black;
+
+      a {
+        color: $black;
+      }
+    }
+
+    a {
+      position: relative;
+      display: flex;
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: $MainFont;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      opacity: 0;
+      padding: 15px 35px;
+      border: 3px solid $white;
+      z-index: 1;
+      transition: color 0.5s ease-in-out;
+      background: transparent;
+      transition: background 0.1s linear 0.5s;
+      animation: scaleUpFadeIn 0.6s ease-in-out forwards 1.2s;
+    }
+
+    // a:hover {
+    //   color: $black;
+    //   background: $white;
+    // }
+
+    .button-container::before,
+    .button-container::after,
+    .button-container span::before,
+    .button-container span::after {
+      content: "";
+      position: absolute;
+      height: 0%;
+      width: calc(110% / 4);
+      background: $white;
+      transition: height 0.5s ease-in-out;
+      z-index: -1;
+    }
+
+    .button-container::before {
+      left: 0;
+      top: 0;
+    }
+
+    .button-container::after {
+      left: 25%;
+      bottom: 0;
+    }
+
+    .button-container span::before {
+      left: 50%;
+      top: 0;
+    }
+
+    .button-container span::after {
+      left: 75%;
+      bottom: 0;
+    }
+
+    .button-container:hover::before,
+    .button-container:hover::after,
+    .button-container span:hover::before,
+    .button-container span:hover::after {
+      height: 100%;
     }
   }
 }
@@ -1374,5 +1459,16 @@ footer {
   100% {
     transform: translateX(0px);
     opacity: 1;
+  }
+}
+
+@keyframes scaleUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(100%);
   }
 }
