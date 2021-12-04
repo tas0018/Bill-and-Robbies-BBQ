@@ -1046,7 +1046,7 @@ nav {
   font-weight: 300;
 }
 
-.specialty-items {
+.specialty {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1064,7 +1064,7 @@ nav {
   padding-top: 4.5rem;
 }
 
-.specialty-items h1 {
+.specialty h1 {
   text-align: center;
   color: #03b1fa;
   font-size: 6rem;
@@ -1073,11 +1073,57 @@ nav {
   padding-bottom: 1rem;
 }
 
-.specialty-items h2 {
+.specialty h2 {
   font-size: 3rem;
   letter-spacing: 2px;
   font-weight: 400;
   padding-bottom: 1rem;
+  text-align: center;
+}
+
+.specialty .specialty-items-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.specialty .specialty-items-container .specialty-items-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.specialty .specialty-items-container .specialty-items-content .nacho-bar h1 {
+  text-align: center;
+  color: #03b1fa;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  padding-top: 6rem;
+}
+
+.specialty .specialty-items-container .specialty-items-content .specialty-items h1 {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.specialty .specialty-items-container .specialty-items-content .specialty-items p {
+  font-size: 2.5rem;
+  padding-bottom: 2%;
+  font-size: 400;
+  text-align: center;
 }
 
 /*Catering Page Code Ends*/

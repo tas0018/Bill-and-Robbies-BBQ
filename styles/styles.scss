@@ -905,7 +905,7 @@ nav {
   }
 }
 
-.specialty-items {
+.specialty {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -927,6 +927,46 @@ nav {
     letter-spacing: 2px;
     font-weight: 400;
     padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .specialty-items-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .specialty-items-content {
+      display: flex;
+      flex-direction: column;
+
+      .nacho-bar {
+        h1 {
+          text-align: center;
+          color: $blue;
+          font-size: 6rem;
+          letter-spacing: 2px;
+          font-weight: 500;
+          padding-bottom: 1rem;
+          padding-top: 6rem;
+        }
+      }
+
+      .specialty-items {
+        h1 {
+          color: #000;
+          font-size: 3rem;
+          font-weight: 600;
+          letter-spacing: 0;
+        }
+
+        p {
+          font-size: 2.5rem;
+          padding-bottom: 2%;
+          font-size: 400;
+          text-align: center;
+        }
+      }
+    }
   }
 }
 /*Catering Page Code Ends*/
