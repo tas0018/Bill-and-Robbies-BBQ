@@ -288,7 +288,7 @@ nav {
 
 /*Hero Section Starts*/
 .hero {
-  background-image: url(../images/hero-image-3.jpg);
+  background-image: url(/images/hero-image-3.jpg);
   background-size: cover;
   display: block;
   position: relative;
@@ -445,7 +445,6 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  cursor: pointer;
 }
 
 .grid .about-us h2 {
@@ -468,12 +467,39 @@ nav {
 .grid .about-us .about-us-content {
   position: relative;
   z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.grid .about-us .about-us-content h2 {
+.grid .about-us .about-us-content a {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #fff;
   z-index: 1000;
+  font-size: 8rem;
+  font-weight: 600;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 
 .grid .menus {
@@ -487,7 +513,6 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  cursor: pointer;
 }
 
 .grid .menus h2 {
@@ -510,12 +535,39 @@ nav {
 .grid .menus .menus-content {
   position: relative;
   z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.grid .menus .menus-content h2 {
+.grid .menus .menus-content a {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #fff;
   z-index: 1000;
+  font-size: 8rem;
+  font-weight: 600;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 
 .grid .the-fam {
@@ -529,7 +581,6 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  cursor: pointer;
 }
 
 .grid .the-fam h2 {
@@ -552,12 +603,39 @@ nav {
 .grid .the-fam .fam-content {
   position: relative;
   z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.grid .the-fam .fam-content h2 {
+.grid .the-fam .fam-content a {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #fff;
   z-index: 1000;
+  font-size: 8rem;
+  font-weight: 600;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 
 .grid .catering {
@@ -571,7 +649,6 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  cursor: pointer;
 }
 
 .grid .catering h2 {
@@ -594,12 +671,39 @@ nav {
 .grid .catering .catering-content {
   position: relative;
   z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.grid .catering .catering-content h2 {
+.grid .catering .catering-content a {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #fff;
   z-index: 1000;
+  font-size: 8rem;
+  font-weight: 600;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 
 .overlay {
