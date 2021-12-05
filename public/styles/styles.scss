@@ -28,19 +28,11 @@ $yellow: #ffdb58;
   align-items: center;
   justify-content: center;
   position: relative;
-  //cursor: pointer;
+  cursor: pointer;
 
   h2 {
     font-size: 6rem;
   }
-}
-
-@mixin menuFlex {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 @mixin menuBoxBackground {
@@ -293,7 +285,7 @@ nav {
 
 /*Hero Section Starts*/
 .hero {
-  background-image: url(/images/hero-image-3.jpg);
+  background-image: url(../images/hero-image-3.jpg);
   background-size: cover;
   display: block;
   position: relative;
@@ -441,20 +433,11 @@ nav {
 .grid .about-us .about-us-content {
   position: relative;
   z-index: 1000;
-  @include menuFlex();
 
-  a {
+  h2 {
     position: relative;
-    display: flex;
     color: $white;
     z-index: 1000;
-    font-size: 8rem;
-    font-weight: 600;
-    flex: 1;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 100%
   }
 }
 
@@ -472,20 +455,11 @@ nav {
 .grid .menus .menus-content {
   position: relative;
   z-index: 1000;
-  @include menuFlex();
 
-  a {
+  h2 {
     position: relative;
-    display: flex;
     color: $white;
     z-index: 1000;
-    font-size: 8rem;
-    font-weight: 600;
-    flex: 1;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 100%
   }
 }
 
@@ -503,20 +477,11 @@ nav {
 .grid .the-fam .fam-content {
   position: relative;
   z-index: 1000;
-  @include menuFlex();
 
-  a {
+  h2 {
     position: relative;
-    display: flex;
     color: $white;
     z-index: 1000;
-    font-size: 8rem;
-    font-weight: 600;
-    flex: 1;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 100%
   }
 }
 
@@ -534,20 +499,11 @@ nav {
 .grid .catering .catering-content {
   position: relative;
   z-index: 1000;
-  @include menuFlex();
 
-  a {
+  h2 {
     position: relative;
-    display: flex;
     color: $white;
     z-index: 1000;
-    font-size: 8rem;
-    font-weight: 600;
-    flex: 1;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 100%
   }
 }
 
