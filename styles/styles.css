@@ -45,10 +45,11 @@ nav {
   letter-spacing: 5px;
 }
 
-.logo h4 {
+.logo a {
   font-size: 2.5rem;
   font-family: "Black Ops One", cursive;
   font-weight: 300;
+  color: #fff;
 }
 
 .nav-links {
